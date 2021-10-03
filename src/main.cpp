@@ -4,27 +4,26 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+	// ** 1
 	string inputVariable;
-	printf("************************************ \n");
 	printf("Upisi neki podatak: ");
-	//cin >> inputVariable;
 	getline(cin, inputVariable);
-
-	printf("************************************ \n");
 	printf("Super upisala si u inputVariable:[%s] \n", inputVariable.c_str());
 
+
+	// ** 2
 	if (inputVariable == "dalje" ) {
-		// this is block of code
+		// this is block of code which belongs to IF
+		printf("U inputVariable prije deklaracije u IF je [%s] \n\n", inputVariable.c_str());
+
 		string inputVariable;
-		printf("************************************ \n");
-		printf("Upisi jos jedan podatak: ");
-		//cin >> inputVariable;
+		printf("Sada je u inputVariable: [%s] - Upisi jos jedan podatak: ", inputVariable.c_str());
 		getline(cin, inputVariable);
 		printf("Super upisala si u inputVariable:[%s] \n", inputVariable.c_str());
 	}
 
-
-	printf("************************************ \n");
+	// ** 3
+	// we are back to the main block of code
 	printf("Da vidimo sto je u sada nputVariable:[%s] \n", inputVariable.c_str());
 
 
