@@ -6,9 +6,9 @@ int main(int argc, char *argv[])
 {
 	// ** 1
 	string inputVariable;
-	printf("Upisi neki podatak: ");
+	printf("Trenutno je u varijabli inputVariable upisano: [%s] - Upisi neki podatak: ", inputVariable.c_str());
 	getline(cin, inputVariable);
-	printf("Super upisala si u inputVariable:[%s] \n", inputVariable.c_str());
+	printf("\nSuper upisala si u inputVariable:[%s] \n", inputVariable.c_str());
 
 
 	// ** 2
@@ -18,13 +18,13 @@ int main(int argc, char *argv[])
 
 		string inputVariable;
 		printf("Sada je u inputVariable: [%s] - Upisi jos jedan podatak: ", inputVariable.c_str());
-		getline(cin, inputVariable);
+		getline(cin, inputVariable); 
 		printf("Super upisala si u inputVariable:[%s] \n", inputVariable.c_str());
 	}
 
 	// ** 3
 	// we are back to the main block of code
-	printf("Da vidimo sto je u sada nputVariable:[%s] \n", inputVariable.c_str());
+	printf("Da vidimo sto je u sada inputVariable:[%s] \n", inputVariable.c_str());
 
 
 }
